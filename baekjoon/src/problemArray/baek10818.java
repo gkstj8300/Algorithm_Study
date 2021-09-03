@@ -6,26 +6,29 @@ import java.util.Scanner;
 public class baek10818 {
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int[] data = new int[N];
+    	Scanner sc = new Scanner(System.in);
+    	
+    	int n = sc.nextInt();
+    	int[] arr = new int[n];
 
-        for(int i = 0; i < N; i++){
-            data[i] = sc.nextInt();
-        }
-
-        int min = data[0]; 
-        int max = data[0];
-
-        for(int i = 0; i< N; i++){
-            if(min > data[i]){
-                min = data[i];
-            }else if(max < data[i]){
-                max = data[i];
-            }
-        }
-
-        System.out.println(min+" "+max);
+		
+		for(int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		int max = arr[0];
+		int min = arr[0];
+		
+    	for(int i = 0; i < n; i++) {
+    	
+    		if(arr[i] > max) {
+    			max = arr[i];
+    		}else if(arr[i] < min) {
+    			min = arr[i];
+    		}
+    	}
+    	System.out.println(min+" "+max);
+        
+        
 
     }
 	

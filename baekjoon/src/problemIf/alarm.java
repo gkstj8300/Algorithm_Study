@@ -8,10 +8,9 @@ public class alarm {
 
 		Scanner scanner = new Scanner(System.in);
 		
-		//int h = scanner.nextInt();
-		//int m = scanner.nextInt();
-		int h = 7;
-		int m = 43;
+		int h = scanner.nextInt();
+		int m = scanner.nextInt();
+
 		
 		int hh = h;
 		int mm = m-45;

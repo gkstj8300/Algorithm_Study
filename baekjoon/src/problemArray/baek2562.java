@@ -8,22 +8,23 @@ public class baek2562 {
 
 		Scanner sc = new Scanner(System.in);
 		
-
 		int[] arr = new int[9];
-		
-		int max = arr[0];
-		int check = 0;
+		int num = arr[0];
+		int max = 0;
 		
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
-			if(max < arr[i]) {
-				max = arr[i];
-				check = i+1;
+
+			if(arr[i] >= 0 && arr[i] <= 100) {
+				if(arr[i] > max) {
+					max = arr[i];
+					num = i+1;
+				}
 			}
+			
 		}
-		
 		System.out.println(max);
-		System.out.println(check);
+		System.out.println(num);
 		
 	}
 

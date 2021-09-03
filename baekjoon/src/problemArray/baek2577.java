@@ -20,7 +20,6 @@ public class baek2577 {
 			int count = 0;
 			for(int j = 0; j < s.length(); j++) {
 				if((s.charAt(j) - '0')==i) {
-					
 					count++;
 				}
 			}
