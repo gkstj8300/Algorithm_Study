@@ -1,32 +1,47 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class test {
 
 	public static void main(String[] args) {
-
+		
 		Scanner sc = new Scanner(System.in);
 		
-		String[] arr = new String[sc.nextInt()];
+		int[] arr = new int[] {1, 2, 2, 3};
 		
-		for(int i = 0; i < arr.length; i++) {
-			arr[i] = sc.next();
-		}
+		int chack = arr.length;
+		boolean flag = false;
 		
-		for(int i = 0; i < arr.length; i++) {
-			int score = 0;
-			int count = 0;
-			for(int j = 0; j < arr[i].length(); j++) {
+		Arrays.sort(arr);
+		
+		
+		for(int i = 0; i < chack; i++) {
+
+			for(int j = i+1; j < arr.length; j++) {
 				
-				if(arr[i].charAt(j) == 'O') {
-					count++;
-				}else if(arr[i].charAt(j) == 'X') {
-					count = 0;
+				if(arr[i] == arr[j]) {	
+					
+					for(int k = j; j < chack-1; k++) {
+						arr[i] = arr[i+1];
+					}
+					chack--;
+					flag = true;
+					break;
+					
 				}
-				score += count;
-				
 			}
-			System.out.println(score);
+			
 		}
+		
+		if(flag) {
+			for(int i = 0; i < chack; i++) {
+				System.out.println(arr[i]+"a");
+			}
+		}else {
+			System.out.println("없음");
+		}
+		
+
 	}
 
 }
