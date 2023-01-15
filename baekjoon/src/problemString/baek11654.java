@@ -8,9 +8,9 @@ public class baek11654 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		int n = sc.next().charAt(0);
+		int a = sc.nextInt();
 		
-		System.out.println(n);
+		
 
 	}
 

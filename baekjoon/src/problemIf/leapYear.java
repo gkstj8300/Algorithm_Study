@@ -6,18 +6,32 @@ public class leapYear {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
-		int a = scanner.nextInt();
+		StringBuilder sb = new StringBuilder();
+		
+		int a = sc.nextInt();
 	
 		
-		scanner.close();
-		
-		if((a%4 == 0 && a%100 != 0) || a%400 == 0) {
-			System.out.println("1");
-		}else {
-			System.out.println("0");
+		for(int i = 0; i <= a; i++) {
+			
+			int b = sc.nextInt();
+			
+			for(int j = 0; j <= b; j++) {
+				
+				String str = sc.next();
+				
+				for(int k = 0; k < str.length(); k++) {
+					
+					sb.append(str.charAt(k)*b);
+					
+				}
+				
+			}
+			
 		}
+		
+		System.out.println(sb);
 		
 	}
 

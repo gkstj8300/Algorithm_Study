@@ -16,7 +16,7 @@ public class alarm {
 		int mm = m-45;
 		
 		scanner.close();
-		
+		 
 		if(mm < 0) {
 			mm = mm + 60;
 			hh--;
