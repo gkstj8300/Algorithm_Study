@@ -12,7 +12,7 @@ public class Quadrant {
 		int b = scanner.nextInt();
 		
 		scanner.close();
-		
+		 
 		if(a > 0) {
 			if(b > 0) {
 				System.out.println("1");
