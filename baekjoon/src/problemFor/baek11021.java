@@ -22,7 +22,7 @@ public class baek11021 {
             int b = Integer.parseInt(tokenizer.nextToken());
             bw.write("Case #" + i + ": " + (a + b) + "\n");
         }
-		br.close();
+		br.close(); 
 		bw.flush();
 		bw.close();
 		
