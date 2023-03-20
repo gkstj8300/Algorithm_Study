@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class baek11022 {
+public class baek11022_2 {
 
 	public static void main(String[] args) throws Exception {
 
@@ -38,6 +38,10 @@ public class baek11022 {
 		
 		sc.close();
 		
+		for(int j = 1; j<= t; j++) {
+			int a = 0;
+			int b = 0;
+		}
 		
 
 	}
