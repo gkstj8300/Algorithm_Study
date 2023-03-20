@@ -11,7 +11,7 @@ public class baek11022_2 {
 
 	public static void main(String[] args) throws Exception {
 
-		/*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int t = Integer.parseInt(br.readLine().trim());
@@ -25,23 +25,18 @@ public class baek11022_2 {
 		
 		br.close();
 		bw.flush();
-		bw.close();*/
+		bw.close();
 		
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		
-		for(int i = 1; i <= t; i++) {
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			System.out.println("Case #"+i+": "+a+" + "+b+" = "+(a+b));
-		}
-		
-		sc.close();
-		
-		for(int j = 1; j<= t; j++) {
-			int a = 0;
-			int b = 0;
-		}
+//		Scanner sc = new Scanner(System.in);
+//		int t = sc.nextInt();
+//		
+//		for(int i = 1; i <= t; i++) {
+//			int a = sc.nextInt();
+//			int b = sc.nextInt();
+//			System.out.println("Case #"+i+": "+a+" + "+b+" = "+(a+b));
+//		}
+//		
+//		sc.close();
 		
 
 	}
