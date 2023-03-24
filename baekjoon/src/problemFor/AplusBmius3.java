@@ -11,14 +11,14 @@ public class AplusBmius3  {
 
 	public static void main(String [] args) throws Exception {
 		
-//		/*
-//		 * Scanner scanner = new Scanner(System.in);
-//		 * 
-//		 * int t = scanner.nextInt();
-//		 * 
-//		 * for(int i = 0; i < t; i++) { int a = scanner.nextInt(); int b =
-//		 * scanner.nextInt(); System.out.println(a+b); }
-//		 */
+		/*
+		 * Scanner scanner = new Scanner(System.in);
+		 * 
+		 * int t = scanner.nextInt();
+		 * 
+		 * for(int i = 0; i < t; i++) { int a = scanner.nextInt(); int b =
+		 * scanner.nextInt(); System.out.println(a+b); }
+		 */
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
