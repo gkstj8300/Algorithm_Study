@@ -10,26 +10,26 @@ public class baek2739 {
 
 	public static void main(String[] args)throws Exception {
 
-//		/*Scanner sc = new Scanner(System.in);
-//		
-//		int a = sc.nextInt();
-//		
-//		for(int i = 1; i <= 9; i++) {
-//			System.out.println(a+" * "+i+" = "+a*i);
-//		}*/
+		/*Scanner sc = new Scanner(System.in);
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
-		int a = Integer.parseInt(br.readLine().trim());
+		int a = sc.nextInt();
 		
 		for(int i = 1; i <= 9; i++) {
-			bw.write(a+" * "+i+" = "+a*i+"\n");
-		}
+			System.out.println(a+" * "+i+" = "+a*i);
+		}*/
 		
-		br.close();
-		bw.flush();
-		bw.close();
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//		
+//		int a = Integer.parseInt(br.readLine().trim());
+//		
+//		for(int i = 1; i <= 9; i++) {
+//			bw.write(a+" * "+i+" = "+a*i+"\n");
+//		}
+//		
+//		br.close();
+//		bw.flush();
+//		bw.close();
 
 	}
 
