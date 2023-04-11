@@ -11,7 +11,7 @@ public class baek11022 {
 
 	public static void main(String[] args) throws Exception {
 
-		/*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int t = Integer.parseInt(br.readLine().trim());
@@ -25,7 +25,7 @@ public class baek11022 {
 		
 		br.close();
 		bw.flush();
-		bw.close();*/
+		bw.close();
 		
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
