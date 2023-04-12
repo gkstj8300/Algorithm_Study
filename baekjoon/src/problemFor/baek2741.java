@@ -26,7 +26,7 @@ public class baek2741 {
         
 	}
 	
-	/*public static void main(String [] args) {
+	public static void main(String [] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -36,7 +36,7 @@ public class baek2741 {
 			System.out.println(i);
 		}
 		
-	}*/
+	}
 	
 
 }
