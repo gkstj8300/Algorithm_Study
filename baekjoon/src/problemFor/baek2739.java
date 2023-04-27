@@ -18,18 +18,18 @@ public class baek2739 {
 			System.out.println(a+" * "+i+" = "+a*i);
 		}*/
 		
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-//		
-//		int a = Integer.parseInt(br.readLine().trim());
-//		
-//		for(int i = 1; i <= 9; i++) {
-//			bw.write(a+" * "+i+" = "+a*i+"\n");
-//		}
-//		
-//		br.close();
-//		bw.flush();
-//		bw.close();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		int a = Integer.parseInt(br.readLine().trim());
+		
+		for(int i = 1; i <= 9; i++) {
+			bw.write(a+" * "+i+" = "+a*i+"\n");
+		}
+		
+		br.close();
+		bw.flush();
+		bw.close();
 
 	}
 
