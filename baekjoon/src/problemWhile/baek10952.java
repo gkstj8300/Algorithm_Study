@@ -29,7 +29,7 @@ public class baek10952 {
 		sc.close();
 		
 		
-		/*
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
@@ -54,7 +54,7 @@ public class baek10952 {
 		br.close();
 		bw.flush();
 		bw.close();
-		 */
+		 
 	}
 
 }
