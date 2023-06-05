@@ -39,5 +39,6 @@ public class baek5622 {
 		
 		System.out.println(time);
 	}
+	
 
 }

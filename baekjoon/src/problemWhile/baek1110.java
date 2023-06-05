@@ -30,6 +30,8 @@ public class baek1110 {
                 break;
         }
         System.out.println(cnt);
+        
+        
 	}
 		
 }

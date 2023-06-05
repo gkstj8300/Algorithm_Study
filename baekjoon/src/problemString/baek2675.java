@@ -23,5 +23,6 @@ public class baek2675 {
 			}
 			System.out.println("");			
 		}	
+		
 	}
 }

@@ -18,4 +18,5 @@ public class baek11720 {
 		
 		System.out.println(sum);
 	}
+	
 }

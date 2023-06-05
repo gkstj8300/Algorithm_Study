@@ -3,6 +3,7 @@ package problemFor;
 import java.util.Scanner;
 
 public class baek2439 {
+	
 
 	public static void main(String[] args) {
 		
