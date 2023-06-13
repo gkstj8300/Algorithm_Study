@@ -1,4 +1,4 @@
-package problemFor;
+package temp;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,8 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class baek11022_2 {
-
+public class temp_2 {
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,5 +37,4 @@ public class baek11022_2 {
 		
 		sc.close();
 	}
-
 }
