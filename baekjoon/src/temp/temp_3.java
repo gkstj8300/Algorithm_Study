@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class temp_2 {
+public class temp_3 {
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -26,15 +26,15 @@ public class temp_2 {
 		bw.flush();
 		bw.close();
 		
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		
-		for(int i = 1; i <= t; i++) {
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			System.out.println("Case #"+i+": "+a+" + "+b+" = "+(a+b));
-		}
-		
-		sc.close();
+//		Scanner sc = new Scanner(System.in);
+//		int t = sc.nextInt();
+//		
+//		for(int i = 1; i <= t; i++) {
+//			int a = sc.nextInt();
+//			int b = sc.nextInt();
+//			System.out.println("Case #"+i+": "+a+" + "+b+" = "+(a+b));
+//		}
+//		
+//		sc.close();
 	}
 }
