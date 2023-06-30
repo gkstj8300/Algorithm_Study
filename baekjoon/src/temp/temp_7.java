@@ -12,17 +12,17 @@ public class temp_7 {
 		StringTokenizer st = new StringTokenizer(str, " ");
 		System.out.println(st.countTokens());
 		
-//		//2踰덉㎏ ���씠�뒗 ��由�
-//		Scanner sc = new Scanner(System.in);
-//		String arr = sc.nextLine();
-//		int count = 0;
-//		
-//		for(int i = 0; i < arr.length() - 1; i++) {
-//			if(arr.charAt(i) == 32) {
-//				count++;
-//			}
-//		}
-//		System.out.println(count);
+		//2踰덉㎏ ���씠�뒗 ��由�
+		Scanner sc = new Scanner(System.in);
+		String arr = sc.nextLine();
+		int count = 0;
+		
+		for(int i = 0; i < arr.length() - 1; i++) {
+			if(arr.charAt(i) == 32) {
+				count++;
+			}
+		}
+		System.out.println(count);
 		
 		//
 //		Scanner sc = new Scanner(System.in);
