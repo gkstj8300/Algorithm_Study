@@ -9,11 +9,7 @@ public class temp_7 {
 		
 		String str = sc.nextLine();
 		
-		StringTokenizer st = new StringTokenizer(str, " ");
-		System.out.println(st.countTokens());
-		
 
-		Scanner sc = new Scanner(System.in);
 		String arr = sc.nextLine();
 		int count = 0;
 		
@@ -22,7 +18,7 @@ public class temp_7 {
 				count++;
 			}
 		}
-		System.out.println(count);
+
 		
 		
 		Scanner sc = new Scanner(System.in);
