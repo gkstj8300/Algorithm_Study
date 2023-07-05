@@ -63,5 +63,6 @@ public class temp_8 {
 			
 		}
 		System.out.println(count);
+		
 	}
 }
