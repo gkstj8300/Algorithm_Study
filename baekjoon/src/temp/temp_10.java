@@ -27,6 +27,7 @@ public class temp_10 {
 			}
 			System.out.printf("%.3f", 100.0 * high / count.length);
 			System.out.println("%");
+			
 		}		
 	}
 }
