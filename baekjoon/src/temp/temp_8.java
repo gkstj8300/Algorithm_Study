@@ -61,6 +61,7 @@ public class temp_8 {
 			count++;
 			
 			
+			
 		}
 		System.out.println(count);
 		
