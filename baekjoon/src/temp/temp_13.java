@@ -2,7 +2,7 @@ package temp;
 
 import java.util.Scanner;
 
-public class temp_11 {
+public class temp_13 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -26,6 +26,5 @@ public class temp_11 {
 			}			
 			System.out.println(sum);			
 		}
-		
 	}
 }
