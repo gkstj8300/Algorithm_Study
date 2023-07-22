@@ -59,9 +59,7 @@ public class temp_8 {
 				}
 			}
 			count++;
-			 
-			
-			
+
 			
 			
 		}
