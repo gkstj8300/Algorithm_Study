@@ -23,7 +23,7 @@ public class temp_13 {
 					count = 0;
 				}			
 				
-				sum += count;				
+				sum += count;				 
 			}			
 			System.out.println(sum);			
 		}
