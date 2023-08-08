@@ -21,7 +21,7 @@ public class temp_13 {
 					count++;
 				}else if(arr[i].charAt(j) == 'X') {
 					count = 0;
-				}			
+				}			 
 				
 				sum += count;				 
 			}			
