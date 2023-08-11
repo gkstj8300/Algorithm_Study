@@ -24,7 +24,7 @@ public class temp_13 {
 				}			 
 				 
 				sum += count;				 
-			}			
+			}			 
 			System.out.println(sum);			
 		}
 	}

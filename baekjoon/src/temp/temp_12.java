@@ -19,7 +19,7 @@ public class temp_12 {
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			bw.write("Case #"+i+": "+a+" + "+b+" = "+(a+b)+"\n");
-		}
+		} 
 		
 		br.close();
 		bw.flush();
