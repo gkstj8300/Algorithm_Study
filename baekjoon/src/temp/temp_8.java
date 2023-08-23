@@ -28,7 +28,7 @@ public class temp_8 {
 								i += 2;
 							}
 						}
-					}else if(str.charAt(i+1) == '-') {
+					}else if(str.charAt(i+1) == '-') { 
 						i++;
 					} 
 				}
