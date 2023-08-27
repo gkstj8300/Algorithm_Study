@@ -22,7 +22,7 @@ public class temp_15 {
 				}else if(arr[i].charAt(j) == 'X') {
 					count = 0;
 				}			
-				 
+				  
 				sum += count;				 
 			}			 
 			System.out.println(sum);		 	
