@@ -25,7 +25,8 @@ public class temp_15 {
 				  
 				sum += count;				 
 			}			 
-			System.out.println(sum);		 	
+			System.out.println(sum);
+			
 		}
 	}
 }
