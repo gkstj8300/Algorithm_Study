@@ -29,6 +29,7 @@ public class temp_8 {
 							}
 						}
 					}else if(str.charAt(i+1) == '-') { 
+						
 						i++;
 					} 
 				}
