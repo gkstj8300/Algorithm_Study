@@ -20,7 +20,7 @@ public class temp_8 {
 						i++;
 					}
 				}
-			}else if(str.charAt(i) == 'd') {
+			}else if(str.charAt(i) == 'd') { 
 				if(i < str.length() - 1) { 
 					if(str.charAt(i+1) == 'z') {
 						if(i < str.length() - 2) {
