@@ -7,12 +7,12 @@ public class baek1152 {
 
 	public static void main(String[] args) {
 		//1번째 풀이
-		/*Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		String str = sc.nextLine();
 		
 		StringTokenizer st = new StringTokenizer(str, " ");
-		System.out.println(st.countTokens());*/
+		System.out.println(st.countTokens());
 		
 		//2번째 풀이는 틀림
 		/*Scanner sc = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class baek1152 {
 				count++;
 			}
 		}
-		System.out.println(count);*/
+		System.out.println(count);
 		
 		//3번째 풀이
 		Scanner sc = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class baek1152 {
 			System.out.println(0);
 		}else {
 			System.out.println(st.split(" ").length);
-		}
+		}*/
 		
 	}
 
