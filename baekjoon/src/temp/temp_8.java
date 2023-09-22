@@ -22,7 +22,7 @@ public class temp_8 {
 				}
 			}else if(str.charAt(i) == 'd') { 
 				if(i < str.length() - 1) { 
-					if(str.charAt(i+1) == 'z') {
+					if(str.charAt(i+1) == 'z') { 
 						if(i < str.length() - 2) {
 							if(str.charAt(i+2) == '=') {
 								i += 2;
