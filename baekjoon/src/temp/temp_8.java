@@ -25,7 +25,7 @@ public class temp_8 {
 					if(str.charAt(i+1) == 'z') { 
 						if(i < str.length() - 2) {
 							if(str.charAt(i+2) == '=') {
-								i += 2;
+								i += 2; 
 							}
 						}
 					}else if(str.charAt(i+1) == '-') { 
