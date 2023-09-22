@@ -10,7 +10,7 @@ public class temp_10 {
 
 		for(int i = 0; i < n; i++) {
 			int[] count = new int[sc.nextInt()];
-			int total = 0;
+			int total = 0; 
 			int high = 0;
 			
 			for(int j = 0; j < count.length; j++) {
