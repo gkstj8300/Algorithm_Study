@@ -7,15 +7,15 @@ public class baek1152 {
 
 	public static void main(String[] args) {
 		//1번째 풀이
-		Scanner sc = new Scanner(System.in);
-		
-		String str = sc.nextLine();
-		
-		StringTokenizer st = new StringTokenizer(str, " ");
-		System.out.println(st.countTokens());
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String str = sc.nextLine();
+//		
+//		StringTokenizer st = new StringTokenizer(str, " ");
+//		System.out.println(st.countTokens());
 		
 		//2번째 풀이는 틀림
-		/*Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		String arr = sc.nextLine();
 		int count = 0;
 		
@@ -25,7 +25,7 @@ public class baek1152 {
 			}
 		}
 		System.out.println(count);
-		
+		/*
 		//3번째 풀이
 		Scanner sc = new Scanner(System.in);
 		
