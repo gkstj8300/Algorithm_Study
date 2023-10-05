@@ -1,4 +1,4 @@
-package problemString;
+package baekjoon.problemString;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

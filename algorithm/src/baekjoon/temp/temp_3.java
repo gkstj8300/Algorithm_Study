@@ -1,4 +1,4 @@
-package temp;
+package baekjoon.temp;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

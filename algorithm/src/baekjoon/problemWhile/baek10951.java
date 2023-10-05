@@ -1,4 +1,4 @@
-package problemWhile;
+package baekjoon.problemWhile;
 
 import java.util.*;
 

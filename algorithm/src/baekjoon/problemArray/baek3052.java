@@ -1,4 +1,4 @@
-package problemArray;
+package baekjoon.problemArray;
 
 import java.util.HashSet;
 import java.util.Scanner;

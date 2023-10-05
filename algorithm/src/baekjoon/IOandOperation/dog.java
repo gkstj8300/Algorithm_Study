@@ -1,4 +1,4 @@
-package IOandOperation;
+package baekjoon.IOandOperation;
 
 public class dog {
 

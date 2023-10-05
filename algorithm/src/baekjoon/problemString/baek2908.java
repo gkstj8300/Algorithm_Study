@@ -1,4 +1,4 @@
-package problemString;
+package baekjoon.problemString;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

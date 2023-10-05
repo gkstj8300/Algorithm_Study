@@ -1,4 +1,4 @@
-package problemIf;
+package baekjoon.problemIf;
 
 import java.util.Scanner;
 

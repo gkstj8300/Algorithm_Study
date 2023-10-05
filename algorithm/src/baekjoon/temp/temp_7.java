@@ -1,4 +1,4 @@
-package temp;
+package baekjoon.temp;
 
 import java.util.Scanner;
 
@@ -20,17 +20,17 @@ public class temp_7 {
 		}
 
 		
-		
-		Scanner sc = new Scanner(System.in);
-		
-		String st = sc.nextLine().trim();
-		sc.close();
-		
-		if(st.isEmpty()) {
-			System.out.println(0);
-		}else {
-			System.out.println(st.split(" ").length);
-		}
+//		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String st = sc.nextLine().trim();
+//		sc.close();
+//		
+//		if(st.isEmpty()) {
+//			System.out.println(0);
+//		}else {
+//			System.out.println(st.split(" ").length);
+//		}
 		
 	}
 }
