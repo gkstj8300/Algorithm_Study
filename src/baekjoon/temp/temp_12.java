@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class temp_12 {
@@ -25,16 +26,16 @@ public class temp_12 {
 		bw.flush();
 		bw.close();
 		
-//		Scanner sc = new Scanner(System.in);
-//		int t = sc.nextInt();
-//		
-//		for(int i = 1; i <= t; i++) {
-//			int a = sc.nextInt();
-//			int b = sc.nextInt();
-//			System.out.println("Case #"+i+": "+a+" + "+b+" = "+(a+b));
-//		}
-//		
-//		sc.close();
+		Scanner sc = new Scanner(System.in);
+		int k = sc.nextInt();
+		
+		for(int i = 1; i <= k; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			System.out.println("Case #"+i+": "+a+" + "+b+" = "+(a+b));
+		}
+		
+		sc.close();
 		
 	}
 }
