@@ -28,6 +28,17 @@ public class lessons_178871 {
                 }
             }
         }
+        
+        for(String calling : callings) {
+            for (int i = 0; i < players.length; i++) {
+                String player = players[i];
+                if (calling.equals(player)) {
+                    players[i] = players[i-1];
+                    players[i-1] = player;
+                    break;
+                }
+            }
+        }
     	
         return players;
     }
