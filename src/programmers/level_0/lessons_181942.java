@@ -16,19 +16,11 @@ package programmers.level_0;
 public class lessons_181942 {
 
     public String solution(String str1, String str2) {
-    	StringBuffer sb = new StringBuffer();
-    	String answer = "";
-    	
+    	StringBuffer answer = new StringBuffer();
     	for(int i = 0; i < str1.length(); i++) {
-    		System.out.println(str1.charAt(i));
-    		System.out.println(str2.charAt(i));
-    		answer += Character.toString(str1.charAt(i))+Character.toString(str2.charAt(i));
-    		sb.append(Character.toString(str1.charAt(i))+Character.toString(str2.charAt(i)));
+    		answer.append(Character.toString(str1.charAt(i))+Character.toString(str2.charAt(i)));
     	}
-    	System.out.println(answer);
-    	System.out.println(sb.toString());
-        
-        return answer;
+        return answer.toString();
     }
 	
 	public static void main(String[] args) {
