@@ -25,7 +25,7 @@ public class lessons_181931 {
             if(included[i - 1] == true)
                 sum += (a + (i - 1) * d);
         }
-        return sum;
+        return sum; 
 	}
 	
 	public static void main(String[] args) {
