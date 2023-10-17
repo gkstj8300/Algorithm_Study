@@ -2,9 +2,8 @@ const fs = require('fs');
 const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
 // const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
 
-let num1 = input[0];
-let num2 = input[1];
-console.log(Number(num1)+" + "+Number(num2)+" = "+(Number(num1)+Number(num2)));
+let strarr = input[0].split("");
+strarr.forEach((str) => console.log(str));
 
 
 /*
