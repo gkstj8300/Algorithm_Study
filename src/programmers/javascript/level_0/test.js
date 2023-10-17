@@ -11,7 +11,8 @@ arr.forEach(function (str) {
         data += str.toUpperCase();
     }
 });
-console.log(data);
+console.log('!@#$%^&*(\\\'"<>?:;'); 
+console.log('!@#$%^&*(\\\'"<>?:;');
 
 // * 문제 설명
 // 영어 알파벳으로 이루어진 문자열 str이 주어집니다. 
