@@ -9,12 +9,12 @@
 str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
 */
 
-
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+const inputData1 = fs.readFileSync('/dev/stdin').toString().split(' ');
 
 let input = [];
 
@@ -22,4 +22,9 @@ rl.on('line', function (line) {
     input = [line];
 }).on('close',function(){
     str = input[0];
+    console.log(str);
 });
+
+
+
+
