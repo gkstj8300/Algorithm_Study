@@ -1,15 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution(["a","b","c"]);
-
-function solution(arr) {
-    var answer = '';
-    arr.forEach((elm) => answer+=elm);
-    return answer;
-}
-
 /*
       문자 리스트를 문자열로 변환하기
 
@@ -25,3 +13,9 @@ function solution(arr) {
       arr	result
       ["a","b","c"]	"abc"
 */
+
+function solution(arr) {
+      var answer = '';
+      arr.forEach((elm) => answer+=elm);
+      return answer;
+  }
