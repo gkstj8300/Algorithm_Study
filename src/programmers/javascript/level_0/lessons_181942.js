@@ -1,17 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution("aaaaa", "bbbbb");
-
-function solution(str1, str2) {
-    var answer = '';
-    for(let i = 0; i < str1.split("").length; i++){
-        answer += str1.split("")[i]+str2.split("")[i];
-    }
-    return answer;
-}
-
 /*
       문자열 섞기
 
@@ -28,3 +14,11 @@ function solution(str1, str2) {
       str1	str2	result
       "aaaaa"	"bbbbb"	"ababababab"
 */
+
+function solution(str1, str2) {
+      var answer = '';
+      for(let i = 0; i < str1.split("").length; i++){
+          answer += str1.split("")[i]+str2.split("")[i];
+      }
+      return answer;
+  }
