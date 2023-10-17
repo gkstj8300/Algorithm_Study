@@ -2,9 +2,8 @@ const fs = require('fs');
 const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
 // const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
 
-let num = input[0];
-num = (num%2==0) ? num+" is even" : num+" is odd";
-console.log(num);
+let data = input[0];
+console.log(input);
 
 
 

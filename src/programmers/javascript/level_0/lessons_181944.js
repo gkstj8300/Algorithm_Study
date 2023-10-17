@@ -19,3 +19,18 @@
       1 is odd
 */
 
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = line.split(' ');
+}).on('close', function () {
+    let num = input[0];
+    num = (num%2==0) ? num+" is even" : num+" is odd";
+    console.log(num);
+});
