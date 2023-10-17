@@ -2,11 +2,13 @@ const fs = require('fs');
 const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
 // const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
 
-let result = solution(["a","b","c"]);
+let result = solution("string", 3);
 
-function solution(arr) {
+function solution(my_string, k) {
     var answer = '';
-    arr.forEach((elm) => answer+=elm);
+    for(let i = 0; i < k; i++){
+        answer += my_string
+    }
     return answer;
 }
 
