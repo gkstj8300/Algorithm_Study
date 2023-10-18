@@ -1,15 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution(34, 3);
-
-function solution(num, n) {
-    let answer = (num % n) == 0 ? 1 : 0;
-    console.log(answer);
-    return answer;
-}
-
 /*
     n의 배수
 
@@ -32,3 +20,8 @@ function solution(num, n) {
     입출력 예 #2
     32는 3의 배수가 아니므로 0을 return합니다.
 */
+
+function solution(num, n) {
+    let answer = (num % n) == 0 ? 1 : 0;
+    return answer;
+}
