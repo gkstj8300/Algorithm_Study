@@ -1,17 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution(2, 6,	1);
-function solution(a, b, c){
-    let answer = "";
-    if(a != b && a != c && b != c){
-        answer = a+b+c;
-    }
-    return answer;
-}
-
-
 /*
     주사위 게임 2
 
