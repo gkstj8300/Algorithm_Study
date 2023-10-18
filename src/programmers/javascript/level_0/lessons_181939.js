@@ -1,22 +1,6 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution(9, 91);
-
-function solution(a, b) {
-    let answer = "";
-    if(String(a)+String(b) > String(b)+String(a)){
-        answer = String(a)+String(b)
-    }else if(String(a)+String(b) < String(b)+String(a)){
-        answer = String(b)+String(a)
-    }else{
-        answer = String(a)+String(b)
-    }
-    return Number(answer);
-}
-
 /*
+    더 크게 합치기
+
     * 문제 설명
     연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
     12 ⊕ 3 = 123
@@ -37,3 +21,16 @@ function solution(a, b) {
     입출력 예 #2
     a ⊕ b = 898 이고, b ⊕ a = 889 입니다. 둘 중 더 큰 값은 898 이므로 898을 return 합니다.
 */
+
+
+function solution(a, b) {
+    let answer = "";
+    if(String(a)+String(b) > String(b)+String(a)){
+        answer = String(a)+String(b)
+    }else if(String(a)+String(b) < String(b)+String(a)){
+        answer = String(b)+String(a)
+    }else{
+        answer = String(a)+String(b)
+    }
+    return Number(answer);
+}
