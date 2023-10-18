@@ -1,23 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution(9, 91);
-
-function solution(a, b) {
-    let answer = "";
-    console.log(Number(String(a)+String(b)));
-    console.log(2*a*b);
-    if(Number(String(a)+String(b)) > 2*a*b){
-        answer = Number(String(a)+String(b))
-    }else if(Number(String(a)+String(b)) > 2*a*b){
-        answer = 2*a*b
-    }else{
-        answer = Number(String(a)+String(b))
-    }
-    return Number(answer);
-}
-
 /*
     두 수의 연산값 비교하기
 
@@ -42,3 +22,17 @@ function solution(a, b) {
     입출력 예 #2
     a ⊕ b = 912 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 912 이므로 912를 return 합니다.
 */
+
+function solution(a, b) {
+    let answer = "";
+    console.log(Number(String(a)+String(b)));
+    console.log(2*a*b);
+    if(Number(String(a)+String(b)) > 2*a*b){
+        answer = Number(String(a)+String(b))
+    }else if(Number(String(a)+String(b)) > 2*a*b){
+        answer = 2*a*b
+    }else{
+        answer = Number(String(a)+String(b))
+    }
+    return Number(answer);
+}
