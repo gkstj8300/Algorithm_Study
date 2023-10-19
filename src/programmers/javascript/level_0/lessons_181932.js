@@ -23,22 +23,34 @@
     "abc1abc1abc"	"acbac"
  */
 
-function solution(code){
-    let mode = 0;
-    return [...code].reduce((acc, cur, idx) => {
-        idx = idx+1;
-        if(cur == "1"){
-            mode = modeChange(mode);
-        }
-        if(idx % 2 == 1 && mode == 0 && cur != "1"){
-            acc += cur;
-        }else if(idx % 2 == 0 && mode == 1 && cur != "1"){
-            acc += cur;
-        }
-        return acc
-    }, "") || "EMPTY";
+function solution(a, b, c){
+    if(a === b && a === c && b === c){
+        return (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c) ;
+    } else if(a === b || a === c || b === c) {
+        return (a + b + c) * (a*a + b*b + c*c);
+    }
+    return a + b + c;
 }
 
-function modeChange(mode){
-    return mode == 0 ? 1 : 0;
+function solution2(a, b, c){
+    let arr = [a, b, c];
+    let count = 0;
+    return arr.reduce((acc, cur, idx) => {
+        for(let i = 0; i < arr.length; i++){
+            if(cur == arr[i] && idx != i){
+                count++;
+            }
+        }
+        return resultCheck(count-(count/2),a,b,c);
+    }, "");
+}
+
+function resultCheck(count,a,b,c){
+    if(count === 0){
+        return a+b+c;
+    } else if(count === 1) {
+        return (a + b + c) * (a*a + b*b + c*c);
+    } else if(count === 3){
+        return (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c) ;
+    }
 }
