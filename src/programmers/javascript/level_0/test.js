@@ -5,6 +5,15 @@ const input = fs.readFileSync('C:/Users/user/git/Algorithm_Study/src/programmers
 let result = solution(4, 4,	4);
 
 function solution(a, b, c){
+    if(a === b && a === c && b === c){
+        return (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c) ;
+    } else if(a === b || a === c || b === c) {
+        return (a + b + c) * (a*a + b*b + c*c);
+    }
+    return a + b + c;
+}
+
+function solution2(a, b, c){
     let arr = [a, b, c];
     let count = 0;
     return arr.reduce((acc, cur, idx) => {
