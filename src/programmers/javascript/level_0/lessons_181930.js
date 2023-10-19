@@ -18,3 +18,26 @@
     5	3	3	473
     4	4	4	110592
 */
+
+function solution(a, b, c){
+    let arr = [a, b, c];
+    let count = 0;
+    return arr.reduce((acc, cur, idx) => {
+        for(let i = 0; i < arr.length; i++){
+            if(cur == arr[i] && idx != i){
+                count++;
+            }
+        }
+        return resultCheck(count-(count/2),a,b,c);
+    }, "");
+}
+
+function resultCheck(count,a,b,c){
+    if(count === 0){
+        return a+b+c;
+    } else if(count === 1) {
+        return (a + b + c) * (a*a + b*b + c*c);
+    } else if(count === 3){
+        return (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c) ;
+    }
+}
