@@ -15,3 +15,27 @@
     출력 #1
     AbCdEfG
 */
+
+
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = [line];
+}).on('close',function(){
+    let arr = input[0].split("");
+    let data = "";
+    arr.forEach(function (str) { 
+        if(str === str.toUpperCase()){
+            data += str.toLowerCase();
+        }else if(str === str.toLowerCase()){
+            data += str.toUpperCase();
+        }
+    });
+    console.log(data);
+});

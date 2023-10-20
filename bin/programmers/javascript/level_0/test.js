@@ -1,33 +1,59 @@
 const fs = require('fs');
-const input = fs.readFileSync('c:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
-const input2 = fs.readFileSync('c:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
+const input = fs.readFileSync('C:/Users/user/git/Algorithm_Study/src/programmers/javascript/level_0/input.txt').toString().split(' ');
+// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
 
-let arr = input[0].split("");
-// arr.forEach((str) => console.log(str));
+let result = solution(4, 4,	4);
 
-arr.forEach(function (str) { 
-    console.log(str);
-    console.log(str.toLowerCase);
-});
-
-function isUpper(str){
-    str.toUpperCase();
-    return str;
-}
-function isLower(){
-
+function solution(a, b, c){
+    if(a === b && a === c && b === c){
+        return (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c) ;
+    } else if(a === b || a === c || b === c) {
+        return (a + b + c) * (a*a + b*b + c*c);
+    }
+    return a + b + c;
 }
 
-// * 문제 설명
-// 영어 알파벳으로 이루어진 문자열 str이 주어집니다. 
-// 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
+function solution2(a, b, c){
+    let arr = [a, b, c];
+    let count = 0;
+    return arr.reduce((acc, cur, idx) => {
+        for(let i = 0; i < arr.length; i++){
+            if(cur == arr[i] && idx != i){
+                count++;
+            }
+        }
+        return resultCheck(count-(count/2),a,b,c);
+    }, "");
+}
 
-// * 제한사항
-// 1 ≤ str의 길이 ≤ 20
-// str은 알파벳으로 이루어진 문자열입니다.
+function resultCheck(count,a,b,c){
+    if(count === 0){
+        return a+b+c;
+    } else if(count === 1) {
+        return (a + b + c) * (a*a + b*b + c*c);
+    } else if(count === 3){
+        return (a + b + c) * (a*a + b*b + c*c) * (a*a*a + b*b*b + c*c*c) ;
+    }
+}
 
-// * 입출력 예
-// 입력 #1
-// aBcDeFg
-// 출력 #1
-// AbCdEfG
+
+/*
+    주사위 게임 2
+
+    * 문제 설명
+    1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 a, b, c라고 했을 때 얻는 점수는 다음과 같습니다.
+
+    세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.
+    세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b + c) × (a2 + b2 + c2 )점을 얻습니다.
+    세 숫자가 모두 같다면 (a + b + c) × (a2 + b2 + c2 ) × (a3 + b3 + c3 )점을 얻습니다.
+    세 정수 a, b, c가 매개변수로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요.
+
+    * 제한사항
+    a, b, c는 1이상 6이하의 정수입니다.
+
+    * 입출력 예
+    a	b	c	result
+    2	6	1	9
+    5	3	3	473
+    4	4	4	110592
+*/
