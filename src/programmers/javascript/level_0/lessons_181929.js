@@ -1,29 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/test.js').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution([5, 7, 8, 3]);
-
-function solution(arr){
-    let a = 0;
-    let b = 1;
-    arr.forEach(num => {
-        a += num;
-        b *= num;
-    });
-    return a*a > b ? 1 : 0;
-}
-
-int solution(int num_list[], size_t num_list_len) {
-    num_list.forEach(num => {
-        a += num;
-        b *= num;
-    });
-    return a*a > b ? 1 : 0;
-}
-
-
-
 /*
       원소들의 곱과 합
 
@@ -46,3 +20,13 @@ int solution(int num_list[], size_t num_list_len) {
       입출력 예 #2
       모든 원소의 곱은 840, 합의 제곱은 529이므로 0을 return합니다.
 */
+
+function solution(arr){
+      let a = 0;
+      let b = 1;
+      arr.forEach(num => {
+            a += num;
+            b *= num;
+      });
+      return a*a > b ? 1 : 0;
+}
