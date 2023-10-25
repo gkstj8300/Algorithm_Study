@@ -1,22 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/test.js').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution([3, 4, 5, 2, 1]);
-
-function solution(arr){
-    let num_1 = '';
-    let num_2 = '';
-    arr.forEach(data => {
-        if(data % 2 == 1){
-            num_1 = num_1.concat(data);
-        } else if(data % 2 == 0){
-            num_2 = num_2.concat(data);
-        }
-    });
-    return Number(num_1)+Number(num_2);
-}
-
 /*
     이어 붙인 수
 
@@ -40,3 +21,16 @@ function solution(arr){
     입출력 예 #2
     홀수만 이어 붙인 수는 573이고 짝수만 이어 붙인 수는 8입니다. 두 수의 합은 581입니다.
 */
+
+function solution(arr){
+    let num_1 = '';
+    let num_2 = '';
+    arr.forEach(data => {
+        if(data % 2 == 1){
+            num_1 = num_1.concat(data);
+        } else if(data % 2 == 0){
+            num_2 = num_2.concat(data);
+        }
+    });
+    return Number(num_1)+Number(num_2);
+}
