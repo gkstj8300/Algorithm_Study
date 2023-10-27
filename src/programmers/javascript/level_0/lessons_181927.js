@@ -1,17 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/test.js').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution([2, 1, 6]);
-
-function solution(arr){
-    let lastNum = arr[arr.length-1]
-    let lastAfterNum = arr[arr.length-2]
-    let resultNum = lastNum > lastAfterNum ? (lastNum - lastAfterNum) : (lastNum * 2);
-    arr.push(resultNum)
-    return arr;
-}
-
 /*
     마지막 두 원소
 
@@ -33,3 +19,11 @@ function solution(arr){
     입출력 예 #2
     마지막 원소인 5가 그전 원소인 7보다 크지 않기 때문에 5의 두 배인 10을 추가해 return합니다.
 */
+
+function solution(arr){
+    let lastNum = arr[arr.length-1]
+    let lastAfterNum = arr[arr.length-2]
+    let resultNum = lastNum > lastAfterNum ? (lastNum - lastAfterNum) : (lastNum * 2);
+    arr.push(resultNum)
+    return arr;
+}
