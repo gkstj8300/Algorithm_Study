@@ -1,24 +1,3 @@
-const fs = require('fs');
-const input = fs.readFileSync('C:/Users/gkstj/git/Algorithm_Study/src/programmers/javascript/level_0/test.js').toString().split(' ');
-// const input2 = fs.readFileSync('/src/programmers/javascript/level_0/input.txt').toString().trim(' ');
-
-let result = solution(0, "wsdawsdassw");
-console.log(result);
-function solution(n, control) {
-    return control.split('').reduce((acc, cur, idx) => {
-        if(cur === 'w'){
-            n++;
-        } else if(cur === 's'){
-            n--;
-        } else if(cur === 'd'){
-            n += 10;
-        } else if(cur === 'a'){
-            n += -10;
-        }
-        return n
-    }, 0);    
-}
-
 /*
     수 조작하기 1
 
@@ -39,3 +18,18 @@ function solution(n, control) {
     n	control	result
     0	"wsdawsdassw"	-1
 */
+
+function solution(n, control) {
+    return control.split('').reduce((acc, cur, idx) => {
+        if(cur === 'w'){
+            n++;
+        } else if(cur === 's'){
+            n--;
+        } else if(cur === 'd'){
+            n += 10;
+        } else if(cur === 'a'){
+            n += -10;
+        }
+        return n
+    }, 0);    
+}
