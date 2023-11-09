@@ -15,7 +15,7 @@ function solution(n, control) {
         } else if(cur === 'a'){
             n += -10;
         }
-        return n
+        return n 
     }, 0);    
 }
 
