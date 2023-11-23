@@ -14,14 +14,11 @@ const test1 = {
 }
 
 const test2 = {
-    solution(X, Y) {
-        let result = solution("12321", "42531");
+    solution(x, y) {        
         let answer = "";
-        X = X.split('');
-        Y = Y.split('');
         for(let i = 0; i < 10; i++) {
-            let x_cnt = X.filter(x => Number(x) === i).length;
-            let y_cnt = Y.filter(y => Number(y) === i).length;
+            let x_cnt = x.split('').filter(x => Number(x) === i).length;
+            let y_cnt = y.split('').filter(y => Number(y) === i).length;
             answer += i.toString().repeat(Math.min(x_cnt, y_cnt));
         }    
         
