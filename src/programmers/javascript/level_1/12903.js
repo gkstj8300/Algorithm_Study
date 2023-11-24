@@ -1,10 +1,3 @@
-let result = solution("qwer");
-console.log(result)
-
-function solution(s) {
-    return Number.isInteger(s.length/2) ? s[s.length/2-1]+s[s.length/2] : s[Math.round(s.length/2)-1];
-}
-
 /*
 가운데 글자 가져오기
 문제 설명
@@ -17,3 +10,7 @@ s	return
 "abcde"	"c"
 "qwer"	"we"
 */
+
+function solution(s) {
+    return Number.isInteger(s.length/2) ? s[s.length/2-1]+s[s.length/2] : s[Math.round(s.length/2)-1];
+}
