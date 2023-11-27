@@ -1,10 +1,3 @@
-let result = solution(40);
-console.log(result)
-
-function solution(age, year = 2022) {
-    return year-age+1;
-}
-
 /*
 나이 출력
 문제 설명
@@ -27,3 +20,6 @@ age	result
 2022년 기준 23살이므로 2000년생입니다.
 */
 
+function solution(age, year = 2022) {
+    return year-age+1;
+}
