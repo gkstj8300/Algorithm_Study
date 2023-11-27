@@ -1,10 +1,3 @@
-let result = solution([89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]);
-console.log(result)
-
-function solution(numbers) {
-    return numbers.reduce((acc, data) => { return acc+data }) / numbers.length;
-}
-
 /*
 배열의 평균값
 문제 설명
@@ -27,3 +20,6 @@ numbers의 원소들의 평균 값은 5.5입니다.
 numbers의 원소들의 평균 값은 94.0입니다.
 */
 
+function solution(numbers) {
+    return numbers.reduce((acc, data) => { return acc+data }) / numbers.length;
+}
