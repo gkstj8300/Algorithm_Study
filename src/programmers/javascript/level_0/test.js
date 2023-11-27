@@ -1,19 +1,21 @@
-let result = solution("qwer");
-console.log(result)
+let result = solution([1,1,3,3,0,1,1]);
+// console.log(result)
 
-function solution(s) {
-    return Number.isInteger(s.length/2) ? s[s.length/2-1]+s[s.length/2] : s[Math.round(s.length/2)-1];
+function solution(arr){
+    // console.log(Math.abs(3));
+    // console.log(Math.abs(3.23));
+    // console.log(Math.round(3));
+    // console.log(Math.ceil(3));
+    // console.log(Math.floor(3));
+    // console.log(Math.sqrt(3));
+    // console.log(Math.cbrt(3));
+    // console.log(Math.random(3));
+    // console.log(Math.pow(3, 4));
+    // console.log(Math.min(...arr));
+    // console.log(Math.max(...arr));
+    // console.log(arr.indexOf(3))
+    console.log(arr.filter((data, idx) => {
+        arr.indexOf(idx)
+    }));
 }
 
-/*
-가운데 글자 가져오기
-문제 설명
-단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.
-
-재한사항
-s는 길이가 1 이상, 100이하인 스트링입니다.
-입출력 예
-s	return
-"abcde"	"c"
-"qwer"	"we"
-*/
