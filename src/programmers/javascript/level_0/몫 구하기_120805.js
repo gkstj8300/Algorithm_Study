@@ -1,10 +1,3 @@
-let result = solution(7, 2);
-console.log(result)
-
-function solution(num1, num2) {
-    return Math.floor(num1 / num2);
-}
-
 /*
 몫 구하기
 문제 설명
@@ -26,3 +19,6 @@ num1이 10, num2가 5이므로 10을 5로 나눈 몫 2를 return 합니다.
 num1이 7, num2가 2이므로 7을 2로 나눈 몫 3을 return 합니다.
 */
 
+function solution(num1, num2) {
+    return Math.floor(num1 / num2);
+}
