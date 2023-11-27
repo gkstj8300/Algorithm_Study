@@ -1,10 +1,3 @@
-let result = solution("jaron");
-console.log(result)
-
-function solution(my_string) {
-    return my_string.split('').reverse().join('');
-}
-
 /*
 문자열 뒤집기
 문제 설명
@@ -25,3 +18,6 @@ my_string이 "jaron"이므로 거꾸로 뒤집은 "noraj"를 return합니다.
 my_string이 "bread"이므로 거꾸로 뒤집은 "daerb"를 return합니다.
 */
 
+function solution(my_string) {
+    return my_string.split('').reverse().join('');
+}
