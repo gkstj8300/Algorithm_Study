@@ -20,9 +20,5 @@ strlist	result
 */
 
 function solution(strlist) {
-    let arr = [];
-    strlist.forEach((data) => {
-        arr.push(data.split('').length);
-    })
-    return arr;
+    return strlist.map((data) => data.length);
 }
