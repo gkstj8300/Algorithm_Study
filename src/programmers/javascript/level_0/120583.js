@@ -1,10 +1,3 @@
-let result = solution([1, 1, 2, 3, 4, 5], 1);
-console.log(result)
-
-function solution(array, n) {
-    return array.filter((data) => data == n).length;
-}
-
 /*
 중복된 숫자 개수
 문제 설명
@@ -27,3 +20,6 @@ array	n	result
 [0, 2, 3, 4] 에는 1이 0개 있습니다.
 */
 
+function solution(array, n) {
+    return array.filter((data) => data == n).length;
+}
