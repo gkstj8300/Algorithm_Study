@@ -6,7 +6,7 @@ let result = solution(arr);
 
 function solution(arr) {
     let result = [];
-    arr.pop();
+    arr.pop(); 
     let aArr = [];
     arr.map((data, i) => {
         aArr[i] = [];
