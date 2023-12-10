@@ -13,7 +13,7 @@ a.forEach((data) => {
     } else {
         resultMap.set(data, 1);
     }
-})
+}) 
 let maxNum = Math.max(...Array.from(resultMap.values()));
 let maxArr = [];
 for(let [key, value] of resultMap){
